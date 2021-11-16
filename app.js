@@ -27,10 +27,10 @@ app.post("/", (req, res) => {
     if (err) throw err;
     console.log(req.file.path);
 
-    //     const result = webp.cwebp("nodejs_logo.jpg","nodejs_logo.webp","-q 80",logging="-v");
-    // result.then((response) => {
-    //   console.log(response);
-    // });
+        const result = webp.cwebp("nodejs_logo.jpg","nodejs_logo.webp","-q 80",logging="-v");
+    result.then((response) => {
+      console.log(response);
+    });
   });
 });
 
